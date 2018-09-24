@@ -37,7 +37,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'webpacker'
 gem 'react-rails'
-gem 'bcrypt',         '3.1.12'
+gem 'bcrypt', '3.1.12'  #for secure password
 
 gem 'bootsnap', '>= 1.1.0', require: false
 
