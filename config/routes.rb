@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-
-
-  resources :profiles
-  resources :users
-  root 'applications#index'
-
+  get 'static_pages/home'
+  get 'static_pages/help'
+  get 'static_pages/contact'
+	resources :profiles
+	resources :users
+	
+	root 'static_pages#home'
 end

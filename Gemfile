@@ -39,7 +39,10 @@ gem 'webpacker'
 gem 'react-rails'
 gem 'bcrypt', '3.1.12'  #for secure password
 
+gem 'rabl'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem "cancan"
+gem 'pry-rails', '~> 0.3.6'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
