@@ -1,7 +1,7 @@
 class StaticPagesController < ApplicationController
 	def home
-		@productivity_image = view_context.image_path('productivity.jpg')
-		@slogan = "Be productive"
+		@productivity_image = view_context.image_path('minion_home.jpg')
+		@slogan = "Tmp"
   end
 
   def help
