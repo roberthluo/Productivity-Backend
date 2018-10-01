@@ -40,6 +40,7 @@ gem 'react-rails'
 gem 'bcrypt', '3.1.12'  #for secure password
 
 gem 'rabl'
+gem 'oj' # for json parser
 gem 'bootsnap', '>= 1.1.0', require: false
 gem "cancan"
 gem 'pry-rails', '~> 0.3.6'
