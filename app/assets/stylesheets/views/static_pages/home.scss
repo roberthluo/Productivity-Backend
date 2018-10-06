@@ -5,7 +5,8 @@
   .hero {
     position:relative;
     background-size:cover;
-    background-position:top center;
+		background-position:top center;
+		margin-top: -10px; 
 
     width:calc(100% - 20px);
     padding:74px 10px 0 10px;
