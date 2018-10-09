@@ -10,8 +10,6 @@ class User < ApplicationRecord
 	has_secure_password
 	validates :password, presence: true, length: { minimum: 6 }
 	
-	has_one :profile, dependent: :destroy
-
 	def format_user_attr
 		self.email.downcase!
 	end 
