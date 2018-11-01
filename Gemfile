@@ -48,6 +48,21 @@ gem 'pry-rails', '~> 0.3.6'
 gem 'bootstrap-sass', '3.3.7'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 
+# Use Devise for authentication
+gem 'devise'
+
+# Use Omniauth Facebook plugin
+gem 'omniauth-facebook'
+# Use Omniauth Google plugin
+
+gem 'omniauth-google-oauth2'
+# Use Omniauth Twitter plugin
+
+gem 'omniauth-twitter'
+
+# Use ActiveRecord Sessions
+gem 'activerecord-session_store'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -59,7 +74,8 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+	gem 'spring-watcher-listen', '~> 2.0.0'
+	gem 'dotenv', '~> 2.2.1'
 end
 
 group :test do
