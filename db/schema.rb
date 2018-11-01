@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_01_013901) do
+ActiveRecord::Schema.define(version: 2018_11_01_042927) do
 
   create_table "models", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -47,6 +47,11 @@ ActiveRecord::Schema.define(version: 2018_11_01_013901) do
     t.datetime "updated_at", null: false
     t.string "provider", limit: 50, default: "", null: false
     t.string "uid", limit: 500, default: "", null: false
+    t.string "password"
+    t.string "password_confirmation"
+    t.string "remember_me"
+    t.string "encrypted_password"
+    t.string "confirmed_at"
   end
 
 end
