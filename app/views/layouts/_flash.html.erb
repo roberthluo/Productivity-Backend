@@ -1,5 +1,5 @@
 <% flash.each do |key, value| %>
-	<div class="flash <%= key %>">
+	<div class="flash <%= key %>" style="padding-bottom: 20px; padding-left: 5px">
 		<%= value %>
 		<div class="close-flash-container">
 			<%= link_to "#", :id => "close-flash" do %>
