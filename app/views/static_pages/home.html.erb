@@ -1,7 +1,9 @@
 <div id="pages-home">
   <div class='hero' style='background-image: url(<%= image_url(@cover_image) %>)'>
-  	<div class='links'>
-  		
+  	<div class='container links' style="text: 200px; color: white">
+			<% if current_user %>
+				<h3>You are currently signed in with the email: <%= current_user.email%></h3>
+			<% end %>
   	</div>
   </div>
 </div>
