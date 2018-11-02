@@ -6,6 +6,4 @@ Rails.application.routes.draw do
 	root 'static_pages#home'
 
 	devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth' }
-
-	get "/signin" => redirect("/users/sign_in")
 end

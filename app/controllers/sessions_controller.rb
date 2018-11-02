@@ -1,4 +1,5 @@
 class SessionsController < Devise::SessionsController
+	prepend_before_filter :verify_user, only: [:destroy]
 
 	def new
     self.resource = resource_class.new(sign_in_params)
@@ -17,4 +18,9 @@ class SessionsController < Devise::SessionsController
     respond_with resource, location: after_sign_in_path_for(resource)
 	end
 
+	def verify_user
+		binding.pry
+		redirect_to new_user_session_path, notice: 'You have already signed out. Please sign in again.' and return unless user_signed_in?
+	end
+	
 end
